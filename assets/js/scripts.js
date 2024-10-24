@@ -266,8 +266,8 @@ $(function(){
 
 function initMap() {
   var myLatLng = {
-    lat: 44.933076,
-    lng: 15.629058
+    lat: -7.004227066433143,
+    lng: 107.63185562366154
   };
   var mapElm = document.getElementById('map');
   var map, marker;
@@ -281,7 +281,7 @@ function initMap() {
     var marker = new google.maps.Marker({
       position: myLatLng,
       map: map,
-      title: 'Hello World!'
+      title: 'Market Office'
     });
   }
 
@@ -488,7 +488,7 @@ $(function(){
       isMobile = window.matchMedia(mq.mdDown).matches;
   // Initial youtube config
   $youtubeElm.YTPlayer({
-    videoId: 'WRCB2QSrQQU',
+    videoId: '4bHUsy74Fss',
     width: 1080,
     repeat: true,
     playerVars: {
