@@ -218,13 +218,13 @@
 }
 
 .passion-var {
-  --v-anchor-base: #E91E63;
+  --v-anchor-base: #e4d12a;
   --v-primarylight-base: #F8BBD0;
-  --v-primary-base: #E91E63;
-  --v-primarydark-base: #880E4F;
+  --v-primary-base: #e4d12a;
+  --v-primarydark-base: #ad9115;
   --v-secondarylight-base: #C5CAE9;
   --v-secondary-base: #304FFE;
-  --v-secondarydark-base: #1A237E;
+  --v-secondarydark-base: #59610f;
 }
 
 .smart-var {
