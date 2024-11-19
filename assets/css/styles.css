@@ -13534,3 +13534,37 @@ body {
   position: relative;
 }
 
+/* Overlay */
+
+.overlay-svc {
+  position: fixed; /* Fixed position to cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: none; /* Hidden by default */
+  z-index: 1000; /* Sit on top of other elements */
+}
+
+.popup-svc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the popup */
+  background: white; /* White background for popup */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.close-svc {
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.title-svc{
+  
+}

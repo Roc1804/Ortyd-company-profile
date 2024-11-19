@@ -73,8 +73,8 @@
               <li class="collection-item" style="animation-duration: 0.5s"><a class="sidenav-close waves-effect menu-list" href="#services">services</a></li>
               <li class="collection-item" style="animation-duration: 0.75s"><a class="sidenav-close waves-effect menu-list" href="#our-expertise">our expertise</a></li>
               <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect menu-list" href="#case-studies">Portfolio</a></li>
-              <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="contact.html">contact</a></li>
-              <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="contact.html">Login</a></li>
+              <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="/contact.html">contact</a></li>
+              <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="/login.html">Login</a></li>
             </ul>
           </div>
           <header class="app-bar header" id="header">
@@ -95,8 +95,8 @@
                       <li><a class="btn btn-flat anchor-link waves-effect" href="#services">services</a></li>
                       <li><a class="btn btn-flat anchor-link waves-effect" href="#our-expertise">our expertise</a></li>
                       <li><a class="btn btn-flat anchor-link waves-effect" href="#case-studies">Portfolio</a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="contact.html">contact</a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="login.html">Login</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="/contact.html">contact</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="/login.html">Login</a></li>
                     </ul>
                   </div>
                   <div class="menu-setting">
@@ -324,7 +324,7 @@
                             <div class="text">
                               <h6 class="title">Application Development</h6>
                               <p>As the world is changing rapidly and becoming ever more complex, become more nimble and more adaptive to change.</p>
-                            </div><a class="btn btn-outlined waves-effect block primary button">see detail</a>
+                            </div><a class="btn btn-outlined waves-effect block primary button" onclick="toggleOverlay('Application')">see more<details></details></a>
                           </div>
                         </div>
                         <div class="item">
@@ -333,7 +333,7 @@
                             <div class="text">
                               <h6 class="title">Survey & Monev</h6>
                               <p>Brings insights from your customers to the centre stage so that you can make better decisions.</p>
-                            </div><a class="btn btn-outlined waves-effect block primary button">see detail</a>
+                            </div><a class="btn btn-outlined waves-effect block primary button" onclick="toggleOverlay('Survey')">See More</a>
                           </div>
                         </div>
                         <div class="item">
@@ -342,7 +342,7 @@
                             <div class="text">
                               <h6 class="title">IT support & Help Desk</h6>
                               <p>ensure your services and applications will work as intended throughout their life cycle.</p>
-                            </div><a class="btn btn-outlined waves-effect block primary button">see detail</a>
+                            </div><a class="btn btn-outlined waves-effect block primary button" onclick="toggleOverlay('ITsupport')">See More</a>
                           </div>
                         </div>
                         <div class="item">
@@ -351,7 +351,7 @@
                             <div class="text">
                               <h6 class="title">Creative Design UI & UX Template</h6>
                               <p>Great design works the way the user expects and explains itself physically and functionally.</p>
-                            </div><a class="btn btn-outlined waves-effect block primary button">see detail</a>
+                            </div><a class="btn btn-outlined waves-effect block primary button" onclick="toggleOverlay('Creative')">See More</a>
                           </div>
                         </div>
                         <div class="item">
@@ -360,7 +360,7 @@
                             <div class="text">
                               <h6 class="title">Photo & Video Content</h6>
                               <p>Organisations that can quickly renew themselves and constantly redesign their services.</p>
-                            </div><a class="btn btn-outlined waves-effect block primary button">see detail</a>
+                            </div><a class="btn btn-outlined waves-effect block primary button" onclick="toggleOverlay('Photovideo')">See More</a>
                           </div>
                         </div>
                         <div class="item">
@@ -369,7 +369,7 @@
                             <div class="text">
                               <h6 class="title">Data Entry</h6>
                               <p>Web service development creates the foundation on top of which other parts of the solution are built on.</p>
-                            </div><a class="btn btn-outlined waves-effect block primary button">see detail</a>
+                            </div><a class="btn btn-outlined waves-effect block primary button" onclick="toggleOverlay('DataEntry')">See More</a>
                           </div>
                         </div>
                         <div class="item show-lg-up">
@@ -398,6 +398,65 @@
                       </nav>
                     </div>
                   </div>
+                </div>
+                  <div id="Application" class="overlay-svc">
+                    <div class="popup-svc">
+                        <h3 class="title-svc">Application Development</h3>
+                        <span class="close-svc" onclick="toggleOverlay('Application')">&times;</span>
+                        <div class="content">
+                            This is the content for overlay 1.
+                        </div>
+                    </div>
+                  </div>
+                  
+                  <div id="Survey" class="overlay-svc">
+                      <div class="popup-svc">
+                        <h3 class="title-svc">Survey & Monev</h3>
+                          <span class="close-svc" onclick="toggleOverlay('Survey')">&times;</span>
+                          <div class="content">
+                              This is the content for overlay 2.
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div id="ITsupport" class="overlay-svc">
+                      <div class="popup-svc">
+                        <h3 class="title-svc">IT Support & Help Desk</h3>
+                          <span class="close-svc" onclick="toggleOverlay('ITsupport')">&times;</span>
+                          <div class="content">
+                              This is the content for overlay 3.
+                          </div>
+                      </div>
+                  </div>
+
+                  <div id="Creative" class="overlay-svc">
+                    <div class="popup-svc">
+                      <h3 class="title-svc">Creative Design & UI UX Template</h3>
+                        <span class="close-svc" onclick="toggleOverlay('Creative')">&times;</span>
+                        <div class="content">
+                            This is the content for overlay 1.
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Photovideo" class="overlay-svc">
+                    <div class="popup-svc">
+                        <h3 class="title-svc">Photo & Video Content</h3>
+                        <span class="close-svc" onclick="toggleOverlay('Photovideo')">&times;</span>
+                        <div class="content">
+                            This is the content for overlay 2.
+                        </div>
+                    </div>
+                </div>Data Entry
+                
+                <div id="DataEntry" class="overlay-svc">
+                    <div class="popup-svc">
+                        <h3 class="title-svc">Data Entry</h3>
+                        <span class="close-svc" onclick="toggleOverlay('DataEntry')">&times;</span>
+                        <div class="content">
+                            This is the content for overlay 3.
+                        </div>
+                    </div>
                 </div>
               </div>
             </section><!-- ##### END SERVICES #####--><!-- ##### EXPERTISE #####-->
@@ -792,7 +851,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div><a href="/portfolio.html" class="btn btn-outlined waves-effect block primary button">see more</a>
                 </div>
               </div>
             </section><!-- ##### END CASE STUDIES #####--><!-- ##### CALL ACTION #####-->
@@ -819,7 +878,7 @@
                       </div>
                       <div class="col-md-4 col-sm-12 pa-0">
                         <div class="d-flex align-items-center justify-content-end">
-                          <a class="waves-effect btn-outlined secondary button" href="/contact">contact us<i class="material-icons">send</i></a>
+                          <a class="waves-effect btn-outlined secondary button" href="/contact.html">contact us<i class="material-icons">send</i></a>
                         </div>
                       </div>
                     </div>
@@ -919,7 +978,7 @@
                     <ul>
                       <li><a href="#team">Team</a></li>
                       <li><a href="#history">History</a></li>
-                      <li><a href="#contact-us">Contact us</a></li>
+                      <li><a href="/contact.html">Contact us</a></li>
                       <li><a href="#locations">Locations</a></li>
                     </ul>
                   </div>
@@ -955,7 +1014,7 @@
                   <ul>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#history">History</a></li>
-                    <li><a href="#contact-us">Contact us</a></li>
+                    <li><a href="/contact.html">Contact us</a></li>
                     <li><a href="#locations">Locations</a></li>
                   </ul>
                 </div>

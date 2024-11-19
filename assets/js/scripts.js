@@ -532,3 +532,29 @@ $(function(){
 });
 
 /******** END Video banner ********/
+
+
+// Overlay
+
+// Function to toggle overlay visibility
+function toggleOverlay(overlayId) {
+  const overlay = document.getElementById(overlayId);
+  
+  // Toggle display property
+  if (overlay.style.display === "block") {
+      overlay.style.display = "none"; // Hide if already visible
+  } else {
+      overlay.style.display = "block"; // Show if hidden
+  }
+}
+
+// Close the overlay if the user clicks anywhere outside of the popup
+window.onclick = function(event) {
+  const overlays = document.querySelectorAll('.overlay-svc');
+  
+  overlays.forEach(function(overlay) {
+      if (event.target === overlay) {
+          overlay.style.display = "none"; // Hide when clicking outside
+      }
+  });
+}
