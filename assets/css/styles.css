@@ -13545,6 +13545,7 @@ body {
   background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
   display: none; /* Hidden by default */
   z-index: 1000; /* Sit on top of other elements */
+  transition: all 0.5s ease-in-out;
 }
 
 .popup-svc {
@@ -13552,9 +13553,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the popup */
-  background: white; /* White background for popup */
+  background: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
   padding: 20px;
   border-radius: 8px;
+  z-index: 1001; /* Ensure it's above the overlay */
 }
 
 .close-svc {
@@ -13566,5 +13568,7 @@ body {
 }
 
 .title-svc{
-  
+  size: 14px;
+  color: var(--v-primarydark-base);
+  text-align: center;
 }
