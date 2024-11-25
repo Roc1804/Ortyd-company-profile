@@ -248,9 +248,9 @@
 }
 
 .ocean-blue-var {
-  --v-anchor-base: #d8ec25;
+  --v-anchor-base: #03ACF2;
   --v-primarylight-base: #bbdefb;
-  --v-primary-base: #d8ec25;
+  --v-primary-base: #03ACF2;
   --v-primarydark-base: #0d47a1;
   --v-secondarylight-base: #b2ebf2;
   --v-secondary-base: #00bcd4;
@@ -10413,30 +10413,30 @@ body {
 }
 
 .testi-card .paper.card {
+  box-shadow: none !important; /* Forces removal of box shadow */
+}
+
+.testi-card .paper.card {
   padding: 24px;
   width: 240px;
   height: 240px;
-  border-radius: 50px 50px 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .testi-card .paper.card p {
   height: 130px;
 }
 
+.testi-card .paper.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .testi-card .rating {
   margin-top: 32px;
-}
-
-.testi-card .star-icon {
-  color: #FFC107;
-}
-
-.theme--light .testi-card .star-icon-disable {
-  color: rgba(0, 0, 0, 0.12);
-}
-
-.theme--dark .testi-card .star-icon-disable {
-  color: rgba(255, 255, 255, 0.12);
 }
 
 .testi-card .person {
@@ -10481,21 +10481,6 @@ body {
   font-weight: 300;
 }
 
-.testi-card .avatar {
-  border: 4px solid #FFF;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-.theme--dark .testi-card .avatar {
-  -webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.2), 0px 1px 1px 0px rgba(50, 50, 50, 0.14), 0px 2px 1px -1px rgba(50, 50, 50, 0.12);
-  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.2), 0px 1px 1px 0px rgba(50, 50, 50, 0.14), 0px 2px 1px -1px rgba(50, 50, 50, 0.12);
-}
-
-.theme--light .testi-card .avatar {
-  -webkit-box-shadow: 0px 1px 3px 0px rgba(128, 128, 128, 0.2), 0px 1px 1px 0px rgba(128, 128, 128, 0.14), 0px 2px 1px -1px rgba(128, 128, 128, 0.12);
-  box-shadow: 0px 1px 3px 0px rgba(128, 128, 128, 0.2), 0px 1px 1px 0px rgba(128, 128, 128, 0.14), 0px 2px 1px -1px rgba(128, 128, 128, 0.12);
-}
 
 /* Case Studies Card */
 .case-card {
@@ -12349,8 +12334,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  overflow: hidden;
   z-index: 5;
   margin: 80px 0px 0px 0px;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 960px) {

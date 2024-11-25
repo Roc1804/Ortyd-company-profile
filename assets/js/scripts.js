@@ -488,7 +488,7 @@ $(function(){
       isMobile = window.matchMedia(mq.mdDown).matches;
   // Initial youtube config
   $youtubeElm.YTPlayer({
-    videoId: '4bHUsy74Fss',
+    videoId: 'BqFSHbzSs7U',
     width: 1080,
     repeat: true,
     playerVars: {
@@ -558,3 +558,31 @@ window.onclick = function(event) {
       }
   });
 }
+
+// Logo company slide
+const slider = document.querySelector('.slider');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('mouseleave', () => {
+    isDown = false;
+});
+
+slider.addEventListener('mouseup', () => {
+    isDown = false;
+});
+
+slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return; // Do nothing if mouse is not down
+    e.preventDefault(); // Prevent text selection
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 2; // The multiplier controls the speed of sliding
+    slider.scrollLeft = scrollLeft - walk;
+});
